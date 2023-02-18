@@ -10,14 +10,14 @@
     {
       "image": "h",
       "content": "h",
-      "isLike": false,
+      "isLike": true,
       "author": "Jika",
       "id": 2
     },
     {
       "image": "l",
       "content": "l",
-      "isLike": true,
+      "isLike": false,
       "author": "Jika",
       "id": 3
     }

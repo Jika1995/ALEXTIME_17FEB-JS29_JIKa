@@ -10,24 +10,24 @@ const Like = ({item}) => {
     getPosts();
   }, []);
 
-  const [like, setLike] = useState({liked: item.isLike});
-
 function changeIsLike (e) {
 
     e.preventDefault();
     item.isLike = !item.isLike;
     putLikedPost(item.id, item.isLike);
-    like.liked = item.isLike;
-    
+
   };
 
   return item ? (
     <>
-      <a href='#' className="mx-2" style={{textDecoration: 'none'}} onClick={ changeIsLike}>
-      {like.liked ? '❤️' : '🤍'}
+      <a href='#' className="mx-2" style={{textDecoration: 'none'}} onClick={ changeIsLike }>
+      {item.isLike ? '❤️' : '🤍'}
       </a>
     </>
   ) : (<h1>Loading</h1>)
 };
 
 export default Like
+
+  // const [like, setLike] = useState({liked: item.isLike});
+  // like.liked = item.isLike;
