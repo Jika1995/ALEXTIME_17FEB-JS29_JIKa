@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "image": "g",
+      "content": "g",
+      "isLike": true,
+      "author": "Jika",
+      "id": 1
+    },
+    {
+      "image": "h",
+      "content": "h",
+      "isLike": false,
+      "author": "Jika",
+      "id": 2
+    },
+    {
+      "image": "l",
+      "content": "l",
+      "isLike": true,
+      "author": "Jika",
+      "id": 3
+    }
+  ]
+}
