@@ -4,17 +4,13 @@ import { postsContext } from '../../PostContext';
 
 const Like = ({item}) => {
 
-  const { putLikedPost, getPosts } = useContext(postsContext);
-
-  useEffect(() => {
-    getPosts();
-  }, []);
+  const { putLikedPost } = useContext(postsContext);
 
 function changeIsLike (e) {
 
     e.preventDefault();
-    item.isLike = !item.isLike;
-    putLikedPost(item.id, item.isLike);
+    // item.isLike = !item.isLike;
+    putLikedPost(item.id, !item.isLike);
 
   };
 

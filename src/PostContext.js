@@ -39,7 +39,7 @@ const PostsContextProvider = ({children}) => {
     };
 
     async function putLikedPost (id, isLike) {
-        await axios.patch(`${POSTSAPI}/${id}`, { isLike: isLike });
+        await axios.patch(`${POSTSAPI}/${id}`, { isLike: isLike }); //ключ - значение
         getPosts();
     }
 
